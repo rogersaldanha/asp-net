@@ -39,10 +39,9 @@ pool:
       ArtifactName: 'drop'
       publishLocation: 'Container'
 
-  - stage: DeployAzureResources
-    jobs: 
+- stage: DeployAzureResources
+      jobs: 
       - job: DeployAzureResources
-      
     - task: AzureCLI@2
       inputs:
         azureSubscription: 'Labscription'
