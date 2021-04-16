@@ -40,7 +40,7 @@ pool:
       publishLocation: 'Container'
 
   - stage: DeployAzureResources
-      jobs: 
+    jobs: 
       - job: DeployAzureResources
     - task: AzureCLI@2
       inputs:
