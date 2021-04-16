@@ -39,7 +39,7 @@ pool:
       ArtifactName: 'drop'
       publishLocation: 'Container'
 
-          - stage: DeployAzureResources
+  - stage: DeployAzureResources
       jobs: 
       - job: DeployAzureResources
     - task: AzureCLI@2
